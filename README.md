@@ -14,7 +14,8 @@
 # Installation
 ## **If you don't have git**:
 ### Click the code button and download the zip, then extract it:
-### Insert gif here
+
+<img src="https://raw.githubusercontent.com/Strykez/Repo_Media/main/FastScrape/Download%20ZIP.png" height=300>
 
 
 <br>
@@ -22,7 +23,7 @@
 ## **If you have git**:
 ### Use the following command in the termial/command line:
 ```
-git clone <link> 
+git clone https://github.com/Strykez/fastscrape.git 
 ```
 
 <br>
@@ -58,7 +59,7 @@ fastscrape
 - Type path in Windows search bar and hit enter
 - Add the folder in the path as per this gif:
 
-## **INSERT GIF**
+<img src="https://raw.githubusercontent.com/Strykez/Repo_Media/main/FastScrape/Path.gif">
 
 
 <br>
@@ -122,7 +123,7 @@ options:
 ## Extracting all the elements with a specific selector and class (in this example all quotes) and outputting into a folder:
 
 ```
-./main.py -url https://quotes.toscrape.com/ -selector span.text -o Desktop/some_folder/quotes.csv
+./main.py --url https://quotes.toscrape.com/ --selector span.text -o Desktop/some_folder/quotes.csv
 ```
 
 <br>
@@ -130,7 +131,7 @@ options:
 ## Extracting all the elements from a specific path:
 
 ```
-./main.py -url https://quotes.toscrape.com/ -selector div.col-md-8/div.quote/span.text -o Desktop/some_folder/quotes.csv
+./main.py --url https://quotes.toscrape.com/ --selector div.col-md-8/div.quote/span.text -o Desktop/some_folder/quotes.csv
 ```
 
 <br>
@@ -138,7 +139,7 @@ options:
 ## Outputting the quotes in an excel-friendly column format:
 
 ```
-./main.py -url https://quotes.toscrape.com/ -selector Quotes:div.col-md-8/div.quote/span.text -o Desktop/some_folder/quotes.csv
+./main.py --url https://quotes.toscrape.com/ --selector Quotes:div.col-md-8/div.quote/span.text -o Desktop/some_folder/quotes.csv
 ```
 
 <br>
@@ -146,7 +147,7 @@ options:
 ## Appending more quotes to the **Quotes** column:
 
 ```
-./main.py -url https://quotes.toscrape.com/page/2/ -selector div.col-md-8/div.quote/span.text -o Desktop/some_folder/quotes.csv
+./main.py --url https://quotes.toscrape.com/page/2/ --selector div.col-md-8/div.quote/span.text -o Desktop/some_folder/quotes.csv
 ```
 
 <br>
@@ -154,15 +155,13 @@ options:
 ## Creating a new **Other_Quotes** column in the .csv file with the quotes from page 3:
 
 ```
-./main.py -url https://quotes.toscrape.com/page/3/ -selector Other_Quotes:div.col-md-8/div.quote/span.text -o Desktop/some_folder/quotes.csv
+./main.py --url https://quotes.toscrape.com/page/3/ --selector Other_Quotes:div.col-md-8/div.quote/span.text -o Desktop/some_folder/quotes.csv
 ```
 
 <br>
 
 # Issues
 ## Feel free to submit issues with bugs that need fixing or with new features that you wish to be added.
-
-## add gif image
 
 <br>
 
